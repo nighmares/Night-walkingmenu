@@ -56,10 +56,10 @@ Citizen.CreateThread(function()
 	end
 end)
 
-RegisterNetEvent('esx:playerLoaded')
-AddEventHandler('esx:playerLoaded', function(playerData)
+RegisterNetEvent('esx:onPlayerSpawn')
+AddEventHandler('esx:onPlayerSpawn', function(playerData)
 	TriggerServerEvent('assynu_animacje:stylchodzeniaserver', 'get')
-end)  
+end)
 
 RegisterNetEvent('assynu_animacje:stylchodzeniaclient')
 AddEventHandler('assynu_animacje:stylchodzeniaclient', function(walkstyle)
